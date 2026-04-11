@@ -1,0 +1,1 @@
+  # 1. 用 while 循环自动翻页，把 jsonplaceholder.typicode.com/posts 的所有数据全部拿到，打印每次拿了几条，最后打印总计几条。
