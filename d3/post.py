@@ -13,6 +13,19 @@ json=payload → 把payload字典自动转成JSON字符串发出去
 timeout=60 → 60秒没回应就报错（Claude比普通API慢，所以给60秒）
 
 
+返回内容：
+{
+    "id": "msg_123",
+    "content": [
+        {
+            "type": "text",
+            "text": "{\"relevant\": true, \"reason\": \"user describes AI use\"}"
+        }
+    ],
+    ...
+}
+
+
 """
 import requests
 
