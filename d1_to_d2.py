@@ -1,3 +1,10 @@
+"""
+
+trial 1：data = requests.get(url).json()在try的外面
+         把.json()落下或者是写错（少写了“（）”）
+
+"""
+
 # 题目1
 # 请求这三个 url，如果请求失败用 try/except 捕获错误并打印，成功的话把返回的 args.text 存进列表，最后用 pd.DataFrame() 打印出来，列名叫 sentence。
 # https://httpbin.org/get?text=I+use+AI+tools
