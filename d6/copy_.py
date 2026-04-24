@@ -2,10 +2,10 @@
 
 .copy() — 创建独立副本
 筛完数据之后，你通常会把结果存进一个新变量：
-pythonresult = df[df["age"] >= 18]
+result = df[df["age"] >= 18]
 但这里有个陷阱：result 不是独立的，它只是 df 的一个"窗口"。改 result 可能会连带影响 df，pandas 还会弹出警告。
 加 .copy() 就解决了：
-pythonresult = df[df["age"] >= 18].copy()
+result = df[df["age"] >= 18].copy()
 现在 result 是完全独立的新表，改它不会动 df。
 
 """
